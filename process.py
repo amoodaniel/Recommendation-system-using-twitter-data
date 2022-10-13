@@ -84,21 +84,6 @@ G_sorted.columns = ['nconst','degree'] #shows the user and the degree of its nod
 print(G_sorted.head())
 ###############################################################
 
-# G_tmp = G #Exclude nodes with degree less than 10
-#
-# partition = community_louvain.best_partition(G)
-# #Turn partition into dataframe
-# partition1 = pd.DataFrame([partition]).T
-# partition1 = partition1.reset_index()
-# partition1.columns = ['names','group']
-# #print(partition1.head())
-#
-# G_sorted = pd.DataFrame(sorted(G_tmp.degree, key=lambda x: x[1], reverse=True))
-# G_sorted.columns = ['names','degree']
-# #print(G_sorted.head())
-# dc = G_sorted
-#
-# combined = pd.merge(dc,partition1, how='left', left_on="names",right_on="names")
 ###############################################################
 
 ###Additional Graph settings
