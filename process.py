@@ -1,10 +1,5 @@
 #!/usr/bin/python
 
-# T2G: Twitter-to-Gephi converter, Python edition v 0.l (05/14/13)
-# This script converts user mentions in tweets into a format capable of being imported into Gephi (https://gephi.org/), a social network visualization platform. It was written and tested under Python 2.7.3, so YMMV under different installations.
-# To use it, begin by creating an input CSV file consisting of two columns: the first (leftmost) containing the usernames of the tweet authors, and the second containing their tweets. Each author username must have a corresponding tweet next to it. Move this file into the working directory of your choice (if using the interpreter this is usually the file where your Python binary lives). After executing T2G, type the name of your input file exactly (including the extension) and it should do its job. The output file should import into Gephi as a directed graph in which ties extend from authors to mentioned users.
-# Please report all bugs and unexpected behavior to deen@dfreelon.org.
-
 import csv
 import re
 import numpy as np
